@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  background: linear-gradient(to right, #f5a623, #fff); /* White to orange gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Default text color */
+}
+
+/* Auth Page Styling */
+.auth-page {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.auth-page h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.auth-page input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.auth-page input:focus {
+  border-color: #f5a623;
+  outline: none;
+}
+
+.auth-page button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #000000; /* Button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.auth-page button:hover {
+  background: #f5a623; /* Adjusted hover color */
+  border: 2px solid #000000; /* Black border on hover */
+}
+
+.auth-page button:active {
+  background: #333; /* Active button color */
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.navigate-button {
+  margin-top: 20px;
+  background: #f5a623; /* Button color */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navigate-button:hover {
+  background: #000000; /* Adjusted hover color */
+}
+
+.navigate-button:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional Typography */
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: #f5a623;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #000000;
+}

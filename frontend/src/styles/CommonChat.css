@@ -1,0 +1,82 @@
+/* src/styles/CommonChat.css */
+
+.chat-container {
+  width: 600px; /* Increased width */
+  height: 500px; /* Increased height */
+  margin: 0 auto;
+  background-color: #000; /* Black background for the chat container */
+  padding: 20px; /* Increased padding */
+  border-radius: 10px; /* Increased border radius */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased shadow for better effect */
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-title {
+  color: white;
+  text-align: center;
+  font-size: 1.5em; /* Adjusted font size for the title */
+  margin-bottom: 20px; /* Increased margin bottom */
+}
+
+.messages {
+  flex: 1; /* Allow the messages section to take available space */
+  max-height: 400px; /* Increased max-height */
+  overflow-y: auto;
+  margin-bottom: 15px; /* Increased margin bottom */
+  padding: 10px; /* Increased padding */
+}
+
+.message {
+  margin-bottom: 15px; /* Increased margin bottom */
+}
+
+.message-bubble {
+  padding: 15px; /* Increased padding */
+  border-radius: 20px; /* Increased border radius */
+  background-color: #FFA500; /* Light orange background for the message bubbles */
+  color: white;
+  word-wrap: break-word;
+}
+
+.message-bubble strong {
+  display: block;
+  margin-bottom: 10px; /* Increased margin bottom */
+}
+
+.message-bubble p {
+  margin: 0;
+}
+
+.message-bubble em {
+  font-size: 0.9em; /* Slightly larger font size */
+  color: #e0e0e0;
+  display: block;
+  text-align: right;
+}
+
+.message-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-input input {
+  width: 80%;
+  padding: 10px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Increased border radius */
+}
+
+.message-input button {
+  width: 18%;
+  padding: 10px; /* Increased padding */
+  background-color: #FFA500; /* Same light orange as the bubbles */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Increased border radius */
+  cursor: pointer;
+}
+
+.message-input button:hover {
+  background-color: #e69500; /* Slightly darker orange on hover */
+}

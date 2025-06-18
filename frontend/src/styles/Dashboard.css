@@ -1,0 +1,58 @@
+/* src/styles/Dashboard.css */
+/* src/styles/Dashboard.css */
+.dashboard {
+    background-image: url('../Assets/Images/Workout.jpg'); /* Correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100vw; /* Ensures the image covers the full width of the viewport */
+    height: 100vh; /* Ensures the image covers the full height of the viewport */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes any default padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  
+  .quick-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+  
+  .stat {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .progress-charts, .upcoming-workouts {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  

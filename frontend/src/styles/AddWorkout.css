@@ -1,0 +1,120 @@
+/* AddWorkout.css */
+.add-workout-page {
+  margin-left: 200px; /* Width of the sidebar */
+  margin-top: 300px; /* Start content 2 inches below the header */
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background for the page */
+  min-height: calc(100vh - 2in); /* Ensure content covers viewport height minus the top margin */
+  display: flex; /* Use flexbox layout */
+  align-items: flex-start; /* Align items to the start of the container */
+}
+
+.image-container {
+  padding-top: 50px;
+  flex-shrink: 0;
+  width: 500px; /* Fixed width for the image container */
+  height: 500px;
+  margin-right: 30px; /* Space between image and form */
+}
+
+.image-container img {
+  width: 150%; /* Fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.image-caption {
+  margin-top: 10px; /* Space between image and caption */
+  text-align: center; /* Center-align caption text */
+}
+
+.image-caption h2 {
+  font-size: 44px; /* Size of the image title */
+  color: #333; /* Dark color for the title */
+  margin: 0;
+}
+
+.image-caption p {
+  font-size: 16px; /* Size of the image caption */
+  color: #666; /* Lighter color for the caption */
+  margin: 5px 0 0; /* Space between title and caption */
+}
+
+.form-container {
+  flex: 1; /* Allow the form to take up remaining space */
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Limit form width */
+  width: 100%;
+}
+
+.form-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+
+.form-group label {
+  display: block;
+  font-weight: 600; /* Bold labels */
+  margin-bottom: 8px;
+  color: #444; /* Slightly darker color for labels */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for inputs */
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px; /* Minimum height for textareas */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #feb47b; /* Blue background for submit button */
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: #333;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.form-buttons button[type="button"] {
+  background-color: #6c757d; /* Gray background for clear button */
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #5a6268;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}

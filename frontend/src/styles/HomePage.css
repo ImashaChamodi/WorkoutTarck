@@ -1,0 +1,60 @@
+/* Ensure the path is correct for the image */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('../Assets/Images/Home.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .homepage-content {
+    background: rgba(255, 255, 255, 0.6); /* Dark overlay for better text visibility */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 700px; /* Adjust max-width as needed */
+    width: 90%; /* Adjust width as needed */
+  }
+  
+  .homepage-title {
+    font-size: 3rem; /* Adjust font size for prominence */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000; /* Orange color for title */
+  }
+  
+  .homepage-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .homepage-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-button {
+    color: #000; /* Black text */
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 2px solid #f5a623; /* Orange border */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    background: #f5a623; /* Orange background */
+  }
+  
+  .nav-button:hover {
+    background: #000; /* Black background on hover */
+    color: #f5a623; /* Orange text on hover */
+  }
+  
